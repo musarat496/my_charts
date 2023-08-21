@@ -1,0 +1,51 @@
+groups:
+  - name: "Networking"
+    description: "Networking Configuration for syncthing"
+
+
+portals:
+  web_portal:
+    protocols:
+      - "http"
+    host:
+      - "$node_ip"
+    ports:
+      - "$variable-web_port"
+    path: "/"
+
+questions:
+  - variable: username
+    label: "smb username"
+    group: Networking
+    schema:
+      type: string
+      default: "ubuntu"
+      required: true
+  - variable: password
+    label: "password"
+    group: Networking
+    schema:
+      type: string
+      default: "ubuntu"
+      required: true
+  - variable: smb_source_url
+    label: "smb source url"
+    group: Networking
+    schema:
+      type: string
+      default: '//192.168.0.74/sharing'
+      required: true
+  - variable: nfs_server
+    label: "nfs server"
+    group: Networking
+    schema:
+      type: string
+      default: "192.168.0.156"
+      required: true
+  - variable: nfs_share
+    label: "nfs shared path"
+    group: Networking
+    schema:
+      type: string
+      default: '/mnt/evo/nfs_export'
+      required: true

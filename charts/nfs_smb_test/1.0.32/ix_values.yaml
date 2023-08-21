@@ -1,0 +1,5 @@
+username: 'ubuntu'
+password: 'paradise'
+smb_source_url: '//192.168.122.80/sharing'
+nfs_server: '192.168.122.80'
+nfs_share: '/var/nfs/general'
