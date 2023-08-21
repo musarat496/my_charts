@@ -1,4 +1,4 @@
-name: netdata
+name: my-netdata
 description: Real-time performance monitoring, done right!
 annotations:
   title: Netdata
